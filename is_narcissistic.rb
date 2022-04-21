@@ -1,3 +1,3 @@
 def is_narcissistic(n)
-  true
+  n**n == n ? true : false 
 end
