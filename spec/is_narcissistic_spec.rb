@@ -6,6 +6,14 @@ describe 'is_narcissistic' do
   end
 
   it 'calculates narcissism of different single digit input' do
-    expect(is_narcissistic(2)).to eq(false)
+    expect(is_narcissistic(2)).to eq(true)
+  end
+
+  it 'calculates narcissism of multi digit input' do
+    expect(is_narcissistic(153)).to eq(true)
+  end
+
+  it 'calculates narcissism of multi digit input' do
+    expect(is_narcissistic(435)).to eq(false)
   end
 end
